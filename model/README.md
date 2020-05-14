@@ -46,7 +46,7 @@ There are three types of Environments
 
 ### CI/CD Environment
 
-The CI/CD Environment is a special Evironment that contains CI/CD pipelines.   These pipelines respond to changes in GitOps configuraiton repository and Application/Service soruce repositories.   They are responisble for keeping the resources in the cluster in-sync with the configurations in Git and re-build/re-deploy application/servcie images.
+The CI/CD Environment is a special Environment that contains CI/CD pipelines.   These pipelines respond to changes in GitOps configuraiton repository and Application/Service soruce repositories.   They are responisble for keeping the resources in the cluster in-sync with the configurations in Git and re-build/re-deploy application/servcie images.
 
 ### ArgoCD Environment
 

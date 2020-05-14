@@ -46,20 +46,20 @@ There are three types of Environments
 
 ### CI/CD Environment
 
-The CI/CD Environment is a special Evironment that contains CI/CD pipelines.   These pipelines respond to changes in GitOps configuraiton repository and Application/Service soruce repositories.   They are responisble for keeping the resources in the cluster in-sync with the configurations in Git and re-build/re-deploy application/servcie images.
+The CI/CD Environment is a special Evironment that contains CI/CD pipelines.   These pipelines respond to changes in GitOps configuration repository and Application/Service source repositories.   They are responsible for keeping the resources in the cluster in-sync with the configurations in Git and re-build/re-deploy application/service images.
 
 ### ArgoCD Environment
 
-ArgoCD is used to perform Continuous Delivery of Applications.   When an Application is created in the target Environment.  An ArgoCD application is also created and kept in the ArgoCD Environment.  The user is reponsible for creating deployment.yaml in the "config" folder for the application.  ArgoCD will deploy the application based on the user-provided deployment specification and re-deploy it automatically when the specification is changed.
+ArgoCD is used to perform Continuous Delivery of Applications.   When an Application is created in the target Environment.  An ArgoCD application is also created and kept in the ArgoCD Environment.  The user is responsible for creating deployment.yaml in the "config" folder for the application.  ArgoCD will deploy the application based on the user-provided deployment specification and re-deploy it automatically when the specification is changed.
 
-### (Plain Old) Enviroment
+### (Plain Old) Environment
 
-Within a Pipelines Model, there are many Enviroments which hold Applications and Servcies.  Each Environment has its own namespace.
+Within a Pipelines Model, there are many Environments which hold Applications and Services.  Each Environment has its own namespace.
 
 ## Application
 
-An Application is a logical grouping of Services.  It contains references to Services.   When an Application is deployed, all referenced Services are deployed.   Two Applications can reference to a same Service.  Each Application can have specific  customerization to the Service it references/deploys.  A Service cannot be deployed by itself (without an Application).
+An Application is a logical grouping of Services.  It contains references to Services.   When an Application is deployed, all referenced Services are deployed.   Two Applications can reference to a same Service.  Each Application can have specific customerization to the Service it references/deploys.  A Service cannot be deployed by itself (without an Application).
 
 ## Service
 
-A Service can have a source repository and an image repository.  Services are unique within an Anvironment.  However, no two Services can share a same source Git reposiotry even though they belong to different Environments.
+A Service can have a source repository and an image repository.  Services are unique within an Environment.  However, no two Services can share a same source Git repository even though they belong to different Environments.

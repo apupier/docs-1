@@ -1,10 +1,10 @@
 # Odo Pipelines Bootstrap Command
 
-Bootstrap command creates defualt environments for your initial application.  It outputs resources yaml files, kustomization files, and Manifest.  The following resources are written to filesystem.
+Bootstrap command creates default environments for your initial application.  It outputs resources yaml files, kustomization files, and Manifest.  The following resources are written to filesystem.
    
-* CI/CD envrionment with pipelines and resources
+* CI/CD environment with pipelines and resources
 * ArgoCD environment
-* Dev envrionment with an applicatin/service
+* Dev environment with an application/service
 * Stage environment
 
 ```shell

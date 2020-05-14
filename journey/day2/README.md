@@ -17,7 +17,7 @@ Evnrionments and Applications/Services.
 
 ## Create a new Environment
 
-To generate resources for a new Environment, you simiply run this command.
+To generate resources for a new Environment, you simply run this command.
 
 ```shell
 $ odo pipelines environment add \
@@ -38,7 +38,7 @@ And, it generates the following yamls.  The new resources are namespace and role
 
 ## Create an Application/Service in the new Environment
 
-To generate resources for the new Serivce, run the foolowing command.
+To generate resources for the new Service, run the following command.
 
 ```shell
 $ odo pipelines service add \
@@ -201,7 +201,7 @@ $ odo pipelines webhook create \
     --service-name bus-svc
 ```
 
-## Commit and Push configuration to GitOps repoository
+## Commit and Push configuration to GitOps repository
 
 Next, we push all the new resources and configurations to GitOps Git repository.
 

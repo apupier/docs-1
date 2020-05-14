@@ -19,8 +19,8 @@ $ odo pipelines service add
 | --env-name | Name of the environment which the service will be added.|
 | --app-name | Name of the application which the service will be added.|
 | --service-name | Name of the service to be added.  Service name must be unique within an environment. |
-| --git-repo-url | Optional.  Source Git repository URL.  It must be unique winith GitOps.|
-| --webhook-secret | Optional.  Wehook secret of the source Git repository URL. It is required if git-repo-url is provided|
+| --git-repo-url | Optional.  Source Git repository URL.  It must be unique within GitOps.|
+| --webhook-secret | Optional.  Webhook secret of the source Git repository URL. It is required if git-repo-url is provided|
 | --manifest | Optional.  Path to manifest file.  Default is _pipelines.yaml_. |
 
 
